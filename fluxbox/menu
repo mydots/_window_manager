@@ -1,0 +1,58 @@
+[begin] (Franklin)
+	# Execute.
+	[exec] (Execute) {fbrun -fg white -bg black}
+	[separator]
+
+	# Apps.
+	[exec] (DVD) {mplayer dvdnav://}
+	[exec] (PDF viewer - evince) {evince}
+	[exec] (Image Viewer - eog) {eog}
+	[exec] (Chrome) {google-chrome}
+	[exec] (Office) {soffice}
+	[exec] (Skype) {skype}
+	[exec] (Transmission) {transmission-gtk}
+	[exec] (iPhone) {echo "123" | vncviewer Franky-Ws-iphone.local -compresslevel 9 -quality 5 -autopass} 
+	[submenu] (Xephyr)
+		[exec] (Display 1) {Xephyr -query localhost -screen 1024x768 :1}
+		[exec] (Display 2) {Xephyr -query localhost -screen 1024x768 :2}
+		[exec] (Display 3) {Xephyr -query localhost -screen 1024x768 :3}
+		[exec] (Display 4) {Xephyr -query localhost -screen 1024x768 :4}
+	[end]
+	[exec] (XTerm) {xterm -ls -fg white -bg black}
+	[separator]
+
+	# Configuration.
+	[exec] (Reload Xresources) {xrdb ~/.xresources}
+	[config] (Configure)
+	[reconfig] (Reload config)
+	[restart] (Restart)
+	#[submenu] (Select WM)
+	#	[restart] (CWM) {/usr/X11R6/bin/cwm}
+	#	[restart] (FVWM) {/usr/X11R6/bin/fvwm}
+	#	[restart] (TWM) {/usr/X11R6/bin/twm}
+	#[end]
+	[submenu] (User Styles)
+		[stylesdir] (~/.fluxbox/styles)
+	[end]
+	[submenu] (System Styles)
+		[stylesdir] (/usr/share/fluxbox/styles)
+	[end]
+	[submenu] (XRandR)
+		[exec] (Local) {xrandr --newmode "1680x1050_59.90" 146.89  1680 1784 1968 2256  1050 1051 1054 1087  -HSync +Vsync && xrandr --addmode Virtual1 1680x1050_59.90 && xrandr --output Virtual1 --mode 1680x1050_59.90}
+		[exec] (Thunderbolt) {xrandr --newmode "2560x1440_60" 312.25 2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync && xrandr --addmode Virtual1 2560x1440_60 && xrandr --output Virtual1 --mode 2560x1440_60}
+		[separator]
+		[exec] (Local) {xrandr --output VGA-1 --off --output LVDS-1 --auto}
+		[exec] (External) {xrandr --output VGA-1 --auto --output LVDS-1 --off}
+		[exec] (Mirror) {xrandr --output VGA-1 --mode 1024x768 --output LVDS-1 --mode 1024x768}
+		[exec] (External Left) {xrandr --output VGA-1 --auto --left-of LVDS-1 --output LVDS-1-1 --auto}
+		[exec] (External Right) {xrandr --output VGA-1 --auto --right-of LVDS-1 --output LVDS-1-1 --auto}
+	[end]
+	[separator]
+
+	# Lock.
+	[exec] (Lock) {xlock}
+	[separator]
+
+	# Exit.
+	[exit] (Exit)
+[end]

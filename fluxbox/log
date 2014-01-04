@@ -1,0 +1,36 @@
+------------------------------------------
+Log File: .fluxbox/log
+Fluxbox version: 1.0.0
+Compiled: Mar 12 2010 13:02:29
+Compiler: GCC
+Compiler version: 3.3.5 (propolice)
+
+Defaults:
+    menu: /usr/local/share/fluxbox/menu
+   style: /usr/local/share/fluxbox/styles/Clean
+    keys: /usr/local/share/fluxbox/keys
+    init: /usr/local/share/fluxbox/init
+
+Compiled options (- => disabled): 
+-DEBUG
+EWMH
+GNOME
+IMLIB2
+KDE
+-NLS
+REMEMBER
+RENDER
+SHAPE
+SLIT
+TOOLBAR
+XFT
+XINERAMA
+XMB
+XPM
+
+------------------------------------------
+Keys: Invalid key/modifier on line 2): OnTitlebar Mouse2 :StartTabbing
+Keys: Invalid key/modifier on line 5): OnTitlebar Double Mouse1 :Shade
+Keys: Invalid key/modifier on line 6): OnTitlebar Mouse3 :WindowMenu
+Keys: Invalid key/modifier on line 9): OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+Keys: Invalid key/modifier on line 10): OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing BottomRight}

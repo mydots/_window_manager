@@ -1,0 +1,28 @@
+[app] (name=win) (class=Xpdf)
+[end]
+[app] (name=command_shell) (class=Ddd)
+  [Dimensions]	{1015 758}
+  [Position]	(UPPERLEFT)	{0 16}
+[end]
+[app] (name=dia) (class=Dia) (role=diagram_window)
+  [Dimensions]	{570 814}
+  [Position]	(UPPERLEFT)	{0 0}
+[end]
+[app] (name=dia) (class=Dia) (role=toolbox_window)
+  [Dimensions]	{188 882}
+[end]
+[app] (name=amarokapp) (class=Amarokapp) (role=PlaylistWindow)
+  [Dimensions]	{1440 884}
+  [Position]	(UPPERLEFT)	{1 35}
+[end]
+[app] (name=Navigator)
+  [Dimensions]	{622 782}
+  [Shaded]	{no}
+[end]
+[app] (name=xterm) (class=XTerm)
+  [Dimensions]	{625 784}
+  [Position]	(UPPERLEFT)	{8 8}
+[end]
+[app] (name=google-chrome) (class=Google-chrome) (role=browser)
+  [Dimensions]	{622 782}
+[end]

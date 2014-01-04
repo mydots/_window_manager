@@ -1,0 +1,23 @@
+[app] (win) (class=Xpdf)
+[end]
+[app] (command_shell) (class=Ddd)
+  [Dimensions]	{1015 758}
+  [Position]	(UPPERLEFT)	{0 16}
+[end]
+[app] (dia) (class=Dia) (role=diagram_window)
+  [Dimensions]	{1248 882}
+  [Position]	(UPPERLEFT)	{0 0}
+[end]
+[app] (dia) (class=Dia) (role=toolbox_window)
+  [Dimensions]	{188 882}
+  [Position]	(UPPERLEFT)	{1250 0}
+[end]
+[app] (amarokapp) (class=Amarokapp) (role=PlaylistWindow)
+  [Dimensions]	{1440 884}
+  [Position]	(UPPERLEFT)	{1 35}
+[end]
+[app] (Navigator)
+[end]
+[app] (name=firefox)
+ [Positions] (WINCENTER)
+[end
